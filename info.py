@@ -45,3 +45,24 @@ words.insert(0, "flower")
 
 ''.join()
 only applicable for alphabets and not for numbers
+
+
+# Reverse and join all at once
+a = ''.join(str(x) for x in l1[::-1])  # Result: "342"
+b = ''.join(str(x) for x in l2[::-1])  # Result: "465"
+
+class Solution:
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+
+nums = [2, 11, 7, 15]
+
+# Find index of the largest number (15)
+max_index = nums.index(max(nums))
+
+print(max_index)  
+# Output: 3
