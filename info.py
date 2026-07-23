@@ -42,3 +42,6 @@ char_list = ['f', 'l', 'o', 'w', 'e', 'r', 'f', 'l', 'o', 'w', 'f', 'l', 'i', 'g
 counts = Counter(char_list)
 
 words.insert(0, "flower")
+
+''.join()
+only applicable for alphabets and not for numbers
