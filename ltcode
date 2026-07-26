@@ -28,3 +28,15 @@ for i in k :
             m.append((i,f))
 joined = [''.join(t) for t in m]
 print(joined)
+
+head = [1,2,3,4,5] 
+a = int(input("enter a number : "))
+b = len(head)
+if int(a) < int(b): 
+     head.pop(-a)
+     print(head) 
+if a >= len(head):
+    print(f"enter a number from 0-{b}")
+    a = int(input("enter a number : "))
+    head.pop(-a)
+    print(head)
