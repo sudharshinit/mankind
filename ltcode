@@ -1,0 +1,30 @@
+phone = {
+    "2": "ABC",
+    "3": "DEF",
+    "4": "GHI",
+    "5": "JKL",
+    "6": "MNO",
+    "7": "PQRS",
+    "8": "TUV",
+    "9": "WXYZ"
+}
+
+
+digit = input('enter a number from 2-9 : ')
+l = []
+for x in digit :
+      l.append(x)
+k = []
+j = []
+a = phone[l[0]]
+for y in a :
+      k.append(y)
+b = phone[l[1]]
+for z in b :
+      j.append(z)
+m = []
+for i in k :
+      for f in j :
+            m.append((i,f))
+joined = [''.join(t) for t in m]
+print(joined)
