@@ -5,7 +5,7 @@ for i in head :
 print(head)
 
 
-head = [1,2,3,4,5,6]
+head = [1,2,3,4]
 a = len(head)
 print(a)
 u1 = int(input("enter a num from 1-6 : "))
