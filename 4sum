@@ -1,0 +1,19 @@
+****
+num = [-3, 6, 0, -5, 2, 1, -6, 4, -1, 5]
+target = int(input("enter a number : "))
+l = []
+n = []
+q = []
+for z in range(len(num)+1):
+    for i in num :
+        l.append(i)
+        if len(l) == 1 :
+          m = [n.append(x) for x in num if x != num.index(i)]
+          print(m)
+          print(n)
+    for j in range(0,len(m)+1):
+         for k in range(1,len(m)+1):
+              for o in range(2,len(m)+1):
+                  result = l[0]+ n[j] + n[k] + n[o]
+                  s=list(str(result))
+result = num[i] + num[j] + num[k] + num[o]
